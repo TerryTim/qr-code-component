@@ -1,0 +1,82 @@
+/* Set base styles for the whole page */
+html, body {
+    height: 100%;
+    background-color: #d6e2f0;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+}
+
+/* Flex container for vertical alignment */
+.flex-container {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Main container for the content */
+.row {
+    width: auto;
+    background-color: #ffff;
+    border-radius: 20px;
+    width: 400px;
+    height: 600px;
+}
+
+/* Common styles for flex items (Title, Description) */
+.flex-item {
+    margin: 10px;
+    line-height: 30px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Styles for the title element */
+.title {
+    color: #1f3251;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* Styles for the description element */
+.desc {
+    color: #7b879d;
+    font-size: 15px;
+}
+
+/* Styles for the QR code image */
+.flex-item img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens up to 768px width */
+@media only screen and (max-width: 768px) {
+    .row {
+        width: 300px; /* Adjust the width for smaller screens */
+        height: auto; /* Allow the height to adjust based on content */
+    }
+    .title {
+        font-size: 20px; /* Decrease the font size for smaller screens */
+    }
+    .desc {
+        font-size: 14px; /* Decrease the font size for smaller screens */
+    }
+}
+
+/* For screens up to 480px width */
+@media only screen and (max-width: 480px) {
+    .row {
+        width: 250px; /* Adjust the width for even smaller screens */
+    }
+    .title {
+        font-size: 18px; /* Further decrease the font size for the smallest screens */
+    }
+    .desc {
+        font-size: 12px; /* Further decrease the font size for the smallest screens */
+    }
+}
